@@ -1,6 +1,6 @@
 // Settings you can change -------------------------------------------
 
-#define FAN_SPEED 35                                                // 
+#define FAN_SPEED 35                                                // Idle Fan Speed
 #define PWM_PIN   9                                                 // Pin for sending PWM signal to fan, D9 should be used
 #define POT_PIN   A0                                                // Pin for reading potentiometer, A0 - A7 can be used
 
@@ -58,4 +58,5 @@ void loop() {
 
   if(debug){Serial.print("FAN:"+String(fanSpeed)+",");}             // Print fan speed, only enabled when debugging
   if(debug){Serial.println("MIN:0,MAX:110");}                       // Print min, max, to make plot look neater, only enabled when debugging
+  
 }
